@@ -10,6 +10,8 @@ public class bj_2798 {
 		int num = scn.nextInt();
 		int max = scn.nextInt();
 		int newMax;
+		int times = 3;
+		
 		int[] arr = new int [num];
 		
 		for(int i = 0; i < num; i++) {
@@ -19,11 +21,14 @@ public class bj_2798 {
 		Arrays.sort(arr);
 				
 		for(int i = num - 1; i > 0; i--) {
-			if( newMax >= max) {
-				continue;
-			}else {
-				newMax += arr[i];
-			}
+			if(times != 0) {
+				if( newMax >= max) {
+					continue;
+				}else {
+					newMax += arr[i];
+					times--;
+				}
+			} break;
 		}
 		
 		System.out.println(newMax - max);
