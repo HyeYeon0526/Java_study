@@ -1,15 +1,16 @@
 package javaQ5;
 
 public class TwoDimShape extends Shape{
-	double area;
+	private double area;
+	
 	double x;
 	double y;
 	
 	public TwoDimShape(double x, double y) {
 		this.x = x;
 		this.y = y;
-		
 	}
+	
 	public double getArea() {
 		return area;
 	}

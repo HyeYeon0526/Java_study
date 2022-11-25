@@ -16,7 +16,7 @@ public class main {
 			shp[i] = new ThreeDimShape(2,3,4);
 		}
 
-		System.out.println(shp[0].Ellipse());
+		System.out.println(shp[0]);
 		
 		
 	}
